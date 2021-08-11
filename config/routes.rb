@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  devise_for :admins
   #Helper authenticate
   authenticate :admin do 
     resources :products
